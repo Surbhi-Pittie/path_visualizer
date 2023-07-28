@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Path Visualizer</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="heading">Path Visualizer</h3>
+      <div class="btn-container">
+        <button class="btn" id="bfs-btn">BFS</button>
+        <button class="btn" id="dfs-btn">DFS</button>
+        <button class="btn" id="djk-btn">Dijkstras</button>
+      </div>
+      <canvas height="500" width="500"> </canvas>
+      <div class="input-container">
+        <div>
+          <p>Source</p>
+          <input
+            class="input"
+            id="s-row"
+            placeholder="row"
+            type="number"
+            min="1"
+            value="1"
+          />
+          <input
+            class="input"
+            id="s-col"
+            placeholder="col"
+            type="number"
+            min="1"
+            value="1"
+          />
+          <div style="display: flex; justify-content: space-around">
+            <p class="mt-1">row</p>
+            <p class="mt-1">col</p>
+          </div>
+        </div>
+        <div>
+          <p>Destination</p>
+          <input
+            class="input"
+            id="d-row"
+            placeholder="row"
+            type="number"
+            min="1"
+            value="5"
+          />
+          <input
+            class="input"
+            id="d-col"
+            placeholder="col"
+            type="number"
+            min="1"
+            value="4"
+          />
+          <div style="display: flex; justify-content: space-around">
+            <p class="mt-1">row</p>
+            <p class="mt-1">col</p>
+          </div>
+        </div>
+        <button class="btn" id="run-btn">Run</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Made with ❤️ by Surbhi Pittie</p>
+    </footer>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
